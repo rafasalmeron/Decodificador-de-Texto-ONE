@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100%;
+}
+
+body {
+    background: var(--Light-blue-light-blue-100, #F3F5FC);
+}
+
+.textoUsuario {
+    min-height: 50px;
+    resize: none; /* Impede o redimensionamento manual pelo usuário */
+  }
+
+.textoDecodificado {
+    min-height: 50%;
+    resize: none;
+}
