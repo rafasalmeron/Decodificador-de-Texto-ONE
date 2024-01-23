@@ -1,22 +1,141 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-main {
-    height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+.icon {
+  width: 120px;
+  height: 48px;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+
+/* Aqui começa as Formatações Principais*/
 body {
-    background: var(--Light-blue-light-blue-100, #F3F5FC);
+  height: 100vh;
+  background: var(--Light-blue-light-blue-100, #f3f5fc);
+}
+
+.conteiner {
+  height: 100vh;
+  display: grid;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  height: 10vh;
+}
+
+.box1 > h1 {
+  color: #0a3871;
+  font-family: "Inter", sans-serif; /*Formatação do Título*/
+  font-weight: 700;
+}
+
+.box2 {
+  display: flex;
+  justify-content: space-around;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  flex-wrap: wrap;
+  padding: 0px 0 30px 0;
+}
+
+.box3 {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+}
+/*Fim*/
+
+
+/*Interiores*/
+textarea {
+  border: none;
+  text-align: center; 
+  border-radius: 20px;
 }
 
 .textoUsuario {
-    min-height: 50px;
-    resize: none; /* Impede o redimensionamento manual pelo usuário */
-  }
-
-.textoDecodificado {
-    min-height: 50%;
-    resize: none;
+  min-height: 50px;
+  resize: none; /* Impede o redimensionamento manual pelo usuário */
 }
+
+.boxCriptografado {
+  margin: 20px 150px;
+  min-width: 250px;
+  max-width: 35vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgb(217, 236, 253) 1.5px 1.5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.texto1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.texto2 {
+  color: #495057;
+  font-family: "Inter", sans-serif;
+  font-size: smaller;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.codificador > textarea {
+  background: none;
+  margin-left: 50px;       
+  margin-right: 50px;
+}
+
+.codificador {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*Alinhamento do conjunto encryptador*/
+  margin-top: 18vh;
+}
+
+.encriptador {
+  color: white;
+  background: #0a3871;
+  border-radius: 24px;    /*Botão 1*/
+  border: 1px;
+  padding: 20px;
+  gap: 8px;
+}
+.desencriptador {
+  color: #0a3871;
+  background: white;
+  border-radius: 24px;
+  border-color: #0a3871; /*Botão 2*/
+  border-width: 1px;
+  padding: 20px;
+  gap: 8px;
+}
+
+
+
+
+

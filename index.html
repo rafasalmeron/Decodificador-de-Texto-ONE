@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador de Texto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./Assets/Frame 6.png" />
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <header>
-            <img src="./Assets/Frame 6.png">
-            <h1>Decodificador</h1>
+      <div class="conteiner">
+        <header class="box1">
+          <img class="icon" src="./Assets/Frame 6.png" />
+          <h1>Decodificador</h1>
         </header>
-        <textarea class="textoUsuario" id="auto-resize-textarea" cols="35" ></textarea>
-        <textarea class="textoDecodificado" cols="35" ></textarea>
-        <button>Criptografar</button>
-        <button>Descriptografar</button>
-        <button>Descriptografar</button>
-        <button>Descriptografar</button>
-        <button>Descriptografar</button>
+        <div class="box2">
+          <div class="codificador">
+            <textarea
+              placeholder="Digite seu texto aqui!"
+              class="textoUsuario"
+              id="auto-resize-textarea"
+              cols="35"
+            ></textarea>
+            <div class="box3">
+              <button class="encriptador">Criptografar</button>
+              <button class="desencriptador">Descriptografar</button>
+            </div>
+          </div>
+          <div class="boxCriptografado">
+            <img
+              width="250"
+              height="250"
+              src="./Assets/High quality products 1 1.svg"
+              alt=""
+            />
+            <p class="texto1">Nenhuma mensagem encontrada</p>
+            <p class="texto2">
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
-<script src="./index.js"></script>
+  </body>
+  <script src="./index.js"></script>
 </html>
