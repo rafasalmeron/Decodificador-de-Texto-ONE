@@ -75,7 +75,6 @@ textarea {
 }
 
 .boxCriptografado {
-  margin: 20px 150px;
   min-width: 250px;
   max-width: 35vw;
   display: flex;
@@ -88,6 +87,8 @@ textarea {
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+  margin: 0px 150px;
+  margin-top: 20px;
 }
 
 .texto1 {
