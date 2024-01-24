@@ -1,8 +1,14 @@
 # Decodificador de Texto
+
+#challengeonedecodificador6
+
+---
+
 [![GitHub repo size](https://img.shields.io/github/repo-size/rafasalmeron/Decodificador-de-Texto-ONE)](https://github.com/rafasalmeron/Decodificador-de-Texto-ONE)
 [![GitHub contributors](https://img.shields.io/github/contributors/rafasalmeron/Decodificador-de-Texto-ONE)](https://github.com/rafasalmeron/Decodificador-de-Texto-ONE/graphs/contributors)
 
 ## Bem-vindo ao Decodificador de Texto
+
 O Decodificador de Texto é uma ferramenta simples e eficaz para criptografar e descriptografar mensagens. Desenvolvido utilizando HTML, CSS e JavaScript, proporciona uma experiência intuitiva e funcional.
 
 ## Destaques
