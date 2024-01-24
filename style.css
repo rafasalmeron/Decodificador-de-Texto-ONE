@@ -14,7 +14,11 @@ header {
   display: flex;
   align-items: center;
 }
-
+::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  color: #0a3871;
+}
 /* Aqui começa as Formatações Principais*/
 body {
   height: 100vh;
@@ -47,7 +51,7 @@ body {
   display: flex;
   justify-content: space-around;
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 7;
   flex-wrap: wrap;
@@ -70,8 +74,14 @@ textarea {
 }
 
 .textoUsuario {
-  min-height: 50px;
+  min-height: 80px;
+  max-width: 325px;
+  font-size: 28px;
   resize: none; /* Impede o redimensionamento manual pelo usuário */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #343a40;
+  text-align: center; 
 }
 
 .boxCriptografado {
