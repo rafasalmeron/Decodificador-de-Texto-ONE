@@ -25,12 +25,29 @@
             <textarea
               placeholder="Digite seu texto aqui!"
               class="textoUsuario"
-              id="auto-resize-textarea"
+              id="textoPrincipal"
               cols="35"
             ></textarea>
             <div class="box3">
-              <button class="encriptador">Criptografar</button>
-              <button class="desencriptador">Descriptografar</button>
+              <button class="encriptador" onclick="criptografarTexto()">
+                Criptografar
+              </button>
+              <button class="reset" onclick="resetarPagina()">
+                Resetar Página
+              </button>
+              <button class="desencriptador" onclick="descriptografarTexto()">
+                Descriptografar
+              </button>
+            </div>
+          </div>
+
+          <div id="modalHistorico" class="modal">
+            <div class="modal-content">
+              <span class="fechar-modal" onclick="fecharModalHistorico()"
+                >&times;</span
+              >
+              <h2>Histórico de Criptografias</h2>
+              <ul id="historicoLista"></ul>
             </div>
           </div>
           <div class="boxCriptografado">
@@ -44,10 +61,13 @@
             <p class="texto2">
               Digite um texto que você deseja criptografar ou descriptografar.
             </p>
+            <button class="historico-btn" onclick="exibirHistorico()">
+              Ver Histórico
+            </button>
           </div>
         </div>
       </div>
     </main>
+    <script src="./index.js"></script>
   </body>
-  <script src="./index.js"></script>
 </html>
