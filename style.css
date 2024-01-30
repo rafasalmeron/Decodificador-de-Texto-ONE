@@ -127,6 +127,14 @@ textarea {
   margin-top: 18vh;
 }
 
+.reset {
+  color: white;
+  background: #9fa4aa;
+  border-radius: 24px; /*Botão 1*/
+  border: 1px;
+  padding: 20px;
+  gap: 8px;
+}
 .encriptador {
   color: white;
   background: #0a3871;
