@@ -130,7 +130,7 @@ textarea {
 .reset {
   color: white;
   background: #9fa4aa;
-  border-radius: 24px; /*Botão 1*/
+  border-radius: 24px; /*Botão Reset*/
   border: 1px;
   padding: 20px;
   gap: 8px;
